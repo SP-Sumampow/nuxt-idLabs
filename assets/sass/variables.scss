@@ -1,0 +1,72 @@
+/************ COLORS ************/
+
+
+$primaryBackgroundColor: #000000;
+$secondaryBackgroundColor: #0C0C0C;
+
+
+$textColorGreen: #cadc67;
+$textColorWhite: #dddddd;
+$textColorOnHover: #b9b9b9;
+
+$iconColor : #003A52;
+
+
+/************ FONTS************/
+
+$ralewayRegular: 'Raleway', sans serif;
+$ralewayMedium: 'Raleway-medium', sans serif;
+$poppinsBold: 'Poppins-bold', sans serif;
+$poppinsRegular: 'Poppins-regular', sans serif;
+
+/************ BREAKPOINTS ************/
+
+
+$tablet-up: 768px;
+$tablet-down: 767px;
+
+$desktop-down: 1199px;
+$desktop-up: 1200px;
+$desktop-large: 1366px;
+
+
+
+
+/************ MEDIA QUERIES ************/
+
+
+
+@mixin tablet-up {
+  @media (min-width: $tablet-up) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet-down) {
+    @content;
+  }
+}
+
+
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+
+/************ MIXINS ************/
+
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin format_vw-vh {
+  width: 100vw;
+  height: 100vh;
+}
+
