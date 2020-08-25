@@ -118,18 +118,18 @@ export default {
       font-size: 13px;
       text-decoration: none;
 
-
-      @include tablet-up {
-        @include flexbox( row, space-around, center);
-        
-        a {
+      a {
           color: $textColorWhite;
           text-decoration: none;
         }
-        
-        li:hover {
+
+      li:hover {
           color: $textColorOnHover;
         }
+
+
+      @include tablet-up {
+        @include flexbox( row, space-around, center);
 
       }
 
